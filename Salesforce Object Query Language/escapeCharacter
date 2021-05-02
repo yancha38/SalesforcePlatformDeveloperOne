@@ -1,0 +1,12 @@
+//How to use escape character in Query Editor.
+
+//You will get all the Accounts where the name 'Almamate' is there at the end.
+Select Id, Name, Phone, Website from Account where Name LIKE '%Almamate';
+
+
+//You will get all the Accounts where the character sequence starts with '%Almamate'.
+Select Id, Name, Phone, Website from Account where Name LIKE '\%Almamate';
+
+
+//You will get all the Accounts where the name is 'Almamate's Info'.
+Select Id, Name, Phone, Website from Account where Name LIKE 'Almamate\'s Info';
